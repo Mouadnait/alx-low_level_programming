@@ -5,9 +5,12 @@
  * but does not include, the null character. The puts function also appends a newline character to 
  * the output and returns an integer.
  */
+
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+	char str[] = "Programming is like building a multilingual puzzle";
 	
-	return (0);
+	puts(str);
+	
+	return 0;
 }
