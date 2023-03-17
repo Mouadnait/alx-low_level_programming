@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /* more headers goes there */
 /**
  * main - Entry point
@@ -13,7 +11,7 @@ int main(void)
 	
 	while (c <= 'z')
 	{
-		if (c != 'e' || c != 'q')
+		if (c != 'q' && c != 'e')
 		{
 			putchar(c);
 		}
