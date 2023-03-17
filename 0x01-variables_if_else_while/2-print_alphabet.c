@@ -15,6 +15,5 @@ int main(void)
 		putchar(ch);
 	}
 	putchar('\n');
-	/* your code goes there */
 	return (0);
 }
