@@ -9,10 +9,15 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
 	for (char ch = 'A'; ch <= 'Z'; ch++)
 	{
-		char small = tolower(ch);
-		putchar(small);
 		putchar(ch);
 	}
 	putchar('\n');
