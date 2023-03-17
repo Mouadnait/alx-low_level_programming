@@ -10,17 +10,15 @@
 int main(void)
 {
 	char c = 'a';
-	char ch = 'A'
 
 	while (c <= 'z')
 	{
 		putchar(c);
 		c++;
 	}
-	while (ch <= 'Z')
+	for (char ch == 'A'; ch <= 'Z'; ch++)
 	{
 		putchar(ch);
-		ch++;
 	}
 	putchar('\n');
 	return (0);
