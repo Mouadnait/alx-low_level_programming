@@ -8,7 +8,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-char _putchar(char c)
+int _putchar(char c)
 {
 	char s[] = "_putchar";
 	int i;
