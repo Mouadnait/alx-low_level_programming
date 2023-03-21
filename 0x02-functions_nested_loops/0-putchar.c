@@ -19,5 +19,5 @@ int _putchar(char c)
 	}
 	_putchar("\n");
 
-	return (0);
+	return (1);
 }
