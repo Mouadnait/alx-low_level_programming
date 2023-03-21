@@ -17,7 +17,7 @@ int _putchar(char c)
 	{
 		_putchar(s[i]);
 	}
-	_putchar("\n");
+	_putchar('\n');
 
-	return (0);
+	return (write(1, &c, 1));
 }
