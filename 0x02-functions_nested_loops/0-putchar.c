@@ -8,7 +8,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int _putchar(char c)
+int main(void)
 {
 	char s[] = "_putchar";
 	int i;
@@ -19,5 +19,5 @@ int _putchar(char c)
 	}
 	_putchar('\n');
 
-	return (1);
+	return (0);
 }
