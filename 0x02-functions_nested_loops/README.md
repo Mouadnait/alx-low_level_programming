@@ -1,2 +1,1 @@
-void jack_bauer(void);
-void jack_bauer(void);
+0x02. C - Functions, nested loops
