@@ -11,9 +11,9 @@
 char _putchar(char c)
 {
 	char s[] = "_putchar";
-	int i = 0;
+	int i;
 
-	for (i; i <= strlen(s); i++)
+	for (i = 0; i < 8; i++)
 	{
 		_putchar("%c", s[i]);
 	}
