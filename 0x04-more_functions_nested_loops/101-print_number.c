@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * print_number - prints a number
  * @n: Input number
@@ -6,7 +6,7 @@
 
 void print_number(int n)
 {
-	long len, res, i, temp, expo;
+	int len, res, i, temp, expo;
 
 	res = n;
 	expo = len =  1;
