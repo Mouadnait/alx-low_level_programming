@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strlen - calculates the length of a string.
  * @s: pointer to the character array.
