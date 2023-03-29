@@ -1,11 +1,25 @@
 /**
+ * str_len - calculates the length of a string.
+ * @str: pointer to the character array.
+ * Return: length of the string
+ */
+int str_len(char *str)
+{
+	int i = 0;
+
+	while (str[i])
+	{
+		i++;
+	}
+	return (i);
+}
+
+/**
  * _strcat - concatenates two strings
  * @dest: pointer to the destination string
  * @src: pointer to the source string
  * Return: pointer to the resulting string dest
  */
-int str_len(char *str);
-
 char *_strcat(char *dest, char *src)
 {
 	int i;
@@ -17,16 +31,5 @@ char *_strcat(char *dest, char *src)
 		dest[dest_len + i] = src[i];
 	}
 
-	return dest;
-}
-
-int str_len(char *str)
-{
-	int i = 0;
-
-	while (str[i])
-	{
-		i++;
-	}
-	return i;
+	return (dest);
 }
