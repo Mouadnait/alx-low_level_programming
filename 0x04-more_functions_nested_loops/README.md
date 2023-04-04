@@ -7,4 +7,4 @@ Introduction to pointers, arrays, and strings. These exercises are foundational 
 * [Tutorials Point on Pointers](https://www.tutorialspoint.com/cprogramming/c_pointers.htm)
 * [Tutorials Point on Strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)
 * [Introduction to pointers](https://users.cs.cf.ac.uk/Dave.Marshall/C/node10.html)
-* Understanding and Using Pointers, Richard Reese, O'Riley, 2013
+* [Understanding and Using Pointers, Richard Reese, O'Riley, 2013](https://www.oreilly.com/library/view/understanding-and-using/9781449344535/)
