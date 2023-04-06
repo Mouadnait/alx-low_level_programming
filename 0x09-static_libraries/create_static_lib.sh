@@ -21,4 +21,4 @@ gcc -c 6-abs.c -o 6-abs.o
 gcc -c 9-strcpy.c -o 9-strcpy.o
 gcc -c _putchar.c -o _putchar.o
 
-ar -rcs *.o
+ar -rc *.o
