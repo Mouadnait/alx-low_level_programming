@@ -1,7 +1,7 @@
 #Alx School - 0x08-static_libraries
 How and why to create static libraries.
 ## New commands / functions used:
-``gcc -c *.c``, ``ar -rc liball.a *.o``, ``gcc main.c -L. -lall``, ``ranlib``, ``nm``
+``gcc -c *.c``, ``ar -rc liball.a *.o``, ``ar rcs <library_name.a> <object_file1.o> <object_file2.o> ... <object_fileN.o>``, ``gcc main.c -L. -lall``, ``ranlib``, ``nm``
 ## Helpful Links
 * [What is a C Library?](http://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html#what_is_a_library)
 * [Creating a Static Library](http://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html#creating_static_archive)
