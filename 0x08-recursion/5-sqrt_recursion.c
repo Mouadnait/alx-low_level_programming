@@ -6,11 +6,12 @@
  */
 int sqrt_checker(int cmp, int n)
 {
-	if (cmp * cmp == n)
-		return (n);
 	if (cmp * cmp > n)
 		return (-1);
-	return (sqrt_checker(cmp + 1, n));
+	else if (cmp * cmp == n)
+		return (cmp);
+	else
+		return (sqrt_checker(cmp + 1, n));
 }
 
 /**
