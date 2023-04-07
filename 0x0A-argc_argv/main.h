@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <stddef.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 char _putchar(char c);
 void print_alphabet(void);
