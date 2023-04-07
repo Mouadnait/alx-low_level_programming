@@ -11,15 +11,14 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	else
 	{
-		int i, sum, nums;
+		int i, sum;
 
 		sum = 0;
 		for (i = 1; i < argc; i++)
 		{
 			if (isdigit(*argv[i]))
 			{
-				sscanf(argv[i], "%d", &nums);
-				sum += nums;
+				sum += atoi(argv[i]);
 				if (i == argc - 1)
 					printf("%d\n", sum);
 			}
