@@ -9,9 +9,12 @@ char *_strdup(char *str)
 	char *str_arr;
 	unsigned int i;
 
+	if (str == NULL)
+		return (NULL);
+
 	str_arr = (char *) malloc((strlen(str) + 1) * sizeof(char));
 
-	if (str == NULL || !str_arr)
+	if (!str_arr)
 		return (NULL);
 	i = 0;
 	while (i < strlen(str) + 1)
