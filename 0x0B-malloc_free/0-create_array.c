@@ -14,11 +14,9 @@ char *create_array(unsigned int size, char c)
 
 	if (!size || !array)
 		return (NULL);
-	else
-	{
-		for (i = 0; i < size; i++)
-			array[i] = c;
-		array[i] = '\0';
-	}
+	for (i = 0; i < size; i++)
+		array[i] = c;
+	array[i] = '\0';
+
 	return (array);
 }
