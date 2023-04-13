@@ -19,12 +19,12 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0; av[i][j]; j++)
 			len++;
-
-		total_len += len + 1; /* add space for newline */
+		/* add space for newline */
+		total_len += len + 1;
 		len = 0;
 	}
-
-	str = (char *)malloc(total_len * sizeof(char)); /* allocate memory for string */
+	/* allocate memory for string */
+	str = (char *)malloc(total_len * sizeof(char) + 1);
 
 	if (str == NULL)
 		return (NULL);
@@ -36,7 +36,9 @@ char *argstostr(int ac, char **av)
 			*str++ = av[i][j];
 		*str++ = '\n';
 	}
-	*str = '\0'; /* terminate string with null character */
+	/* terminate string with null character */
+	*str = '\0';
 
-	return (str - total_len); /* return pointer to start of string */
+	/* return pointer to start of string */
+	return (str - total_len);
 }
