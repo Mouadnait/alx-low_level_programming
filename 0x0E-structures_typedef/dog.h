@@ -2,6 +2,8 @@
 #define DOG_H
 
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 /**
  * struct dog - dog data
@@ -20,5 +22,6 @@ typedef struct dog
 
 /* Additional function prototypes */
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 
 #endif
