@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * get_endianness-returnsprocessorendianness
- * Return:0ifbigendian,1iflittleendian
+ * get_endianness - returns processor endianness
+ * Return: 0 if bigendian, 1 if little endian
  */
 int get_endianness(void)
 {
@@ -10,6 +10,6 @@ int get_endianness(void)
 	char *test;
 
 	i = 1;
-	test = (char*)&i;
+	test = (char *)&i;
 	return ((int)test[0]);
 }
