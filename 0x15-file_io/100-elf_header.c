@@ -4,9 +4,9 @@
 void print_osabi_more(Elf64_Ehdr h);
 
 /**
- *  * print_magic - prints ELF magic bytes
- *   * @h: the ELF header struct
- *    */
+ * print_magic - prints ELF magic bytes
+ * @h: the ELF header struct
+ */
 void print_magic(Elf64_Ehdr h)
 {
 	int i;
@@ -17,9 +17,9 @@ void print_magic(Elf64_Ehdr h)
 }
 
 /**
- *  * print_class - prints ELF class
- *   * @h: the ELF header struct
- *    */
+ * print_class - prints ELF class
+ * @h: the ELF header struct
+ */
 void print_class(Elf64_Ehdr h)
 {
 	printf("  Class:                             ");
@@ -39,9 +39,9 @@ void print_class(Elf64_Ehdr h)
 }
 
 /**
- *  * print_data - prints ELF data
- *   * @h: the ELF header struct
- *    */
+ * print_data - prints ELF data
+ * @h: the ELF header struct
+ */
 void print_data(Elf64_Ehdr h)
 {
 	printf("  Data:                              ");
@@ -61,9 +61,9 @@ void print_data(Elf64_Ehdr h)
 }
 
 /**
- *  * print_version - prints ELF version
- *   * @h: the ELF header struct
- *    */
+ * print_version - prints ELF version
+ * @h: the ELF header struct
+ */
 void print_version(Elf64_Ehdr h)
 {
 	printf("  Version:                           %d", h.e_ident[EI_VERSION]);
@@ -81,9 +81,9 @@ void print_version(Elf64_Ehdr h)
 }
 
 /**
- *  * print_osabi - prints ELF osabi
- *   * @h: the ELF header struct
- *    */
+ * print_osabi - prints ELF osabi
+ * @h: the ELF header struct
+ */
 void print_osabi(Elf64_Ehdr h)
 {
 	printf("  OS/ABI:                            ");
@@ -125,9 +125,9 @@ void print_osabi(Elf64_Ehdr h)
 
 
 /**
- *  * print_osabi_more - prints ELF osabi more
- *   * @h: the ELF header struct
- *    */
+ * print_osabi_more - prints ELF osabi more
+ * @h: the ELF header struct
+ */
 void print_osabi_more(Elf64_Ehdr h)
 {
 	switch (h.e_ident[EI_OSABI])
@@ -151,9 +151,9 @@ void print_osabi_more(Elf64_Ehdr h)
 }
 
 /**
- *  * print_abiversion  - prints ELF ABI version
- *   * @h: the ELF header struct
- *    */
+ * print_abiversion  - prints ELF ABI version
+ * @h: the ELF header struct
+ */
 void print_abiversion(Elf64_Ehdr h)
 {
 	printf("  ABI Version:                       %d\n",
@@ -161,9 +161,9 @@ void print_abiversion(Elf64_Ehdr h)
 }
 
 /**
- *  * print_type - prints the ELF type
- *   * @h: the ELF header struct
- *    */
+ * print_type - prints the ELF type
+ * @h: the ELF header struct
+ */
 void print_type(Elf64_Ehdr h)
 {
 	char *p = (char *)&h.e_type;
@@ -197,9 +197,9 @@ void print_type(Elf64_Ehdr h)
 }
 
 /**
- *  * print_entry - prints the ELF entry point address
- *   * @h: the ELF header struct
- *    */
+ * print_entry - prints the ELF entry point address
+ * @h: the ELF header struct
+ */
 void print_entry(Elf64_Ehdr h)
 {
 	int i = 0, len = 0;
@@ -230,12 +230,11 @@ void print_entry(Elf64_Ehdr h)
 }
 
 /**
- *  * main - program
- *   * @ac: argument count
- *    * @av: argument vector
- *     *
- *      * Return: 1 on success 0 on failure
- *       */
+ * main - program
+ * @ac: argument count
+ * @av: argument vector
+ * Return: 1 on success 0 on failure
+ */
 int main(int ac, char **av)
 {
 	int fd;
