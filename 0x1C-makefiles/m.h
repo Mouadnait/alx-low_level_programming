@@ -1,5 +1,5 @@
-#ifndef __SCHOOL_H__
-#define __SCHOOL_H__
+#ifndef __m_H__
+#define __m_H__
 
 #include <stdlib.h>
 #include <stdio.h>
