@@ -1,19 +1,17 @@
 # Basic Make file, but with flags
 
 CC=gcc
-SRC=holberton.c main.c
-OBJ=$(SRC:.c=.o)
-NAME=holberton
+SRC=main.c school.c
+OBJ=$(SRC:%.c=%.o)
+NAME=school
 RM=rm -f
 CFLAGS=-Wall -Werror -Wextra -pedantic
 
-all: $(SRC) $(NAME)
-$(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $@
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 clean:
-	$(RM) *~ $(NAME) 
-fclean:
-	$(RM) *~ $(NAME) $(OBJ)	
+	$(RM) *~ $(NAME)
 oclean:
 	$(RM) $(OBJ)
+fclean: clean oclean
 re: oclean all
