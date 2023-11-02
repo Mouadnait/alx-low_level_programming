@@ -4,6 +4,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void print_school_logo(void);
+void print_school(void);
 
 #endif
